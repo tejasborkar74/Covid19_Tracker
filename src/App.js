@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Covid from './components/covid'
+import {COLORS} from './color'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+// const bg_color = #251629;
+
+const App = () => {
+  return(
+    <div>
+      <style>{'body {background-color: '+COLORS.bg_color+';}'}</style>
+      <Covid/>
     </div>
-  );
+  )
 }
 
 export default App;

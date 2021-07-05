@@ -1,0 +1,54 @@
+.page{
+    padding-top: 50px;
+    padding-bottom: 27px;
+}
+h1{
+    color: white;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+}
+.custome-card{
+    border-style: solid;
+    border-width: 2px;
+    display: inline-block;
+    padding: 30px;
+}
+
+.drop_down{
+    width: 80%;
+}
+
+.custom_row{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.live{
+    font-size: small;
+}
+.loc{
+    background-color: turquoise;
+}
+
+.recovered{
+    background-color: tomato;
+}
+
+.confirmed{
+    background-color: teal;
+}
+
+.deaths{
+     background-color: yellow;
+}
+
+.active{
+    background-color: brown;
+}
+
+.update{
+    background-color: coral;
+}

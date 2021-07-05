@@ -1,3 +1,7 @@
+# Deployed on Heroku
+
+Project Link :- https://covid19-tracker-tejas74.herokuapp.com/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

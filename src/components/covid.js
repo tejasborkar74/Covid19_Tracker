@@ -17,15 +17,7 @@ const Covid = () =>{
         axios.get('https://api.covid19india.org/data.json')
         .then((res) => {
             const data = res.data.statewise;
-            // console.log(data.statewise[0].active);
-
-            // setdata(data.statewise[0]);
-            // setactive(data.statewise[0].active);
-            // setconfirmed(data.statewise[0].confirmed);
-            // setdeaths(data.statewise[0].deaths);
-            // setrecovered(data.statewise[0].recovered);
-            // setlastupdate(data.statewise[0].lastupdatedtime);
-            // setstate(data.statewise[0].state);
+            
             setdata(data[0]);
             setactive(data[0].active);
             setconfirmed(data[0].confirmed);
@@ -65,17 +57,17 @@ const Covid = () =>{
     return(
         <div className="page">
 
-            <div>
-                <h1 className='live'>🔴 LIVE</h1>
-                <h2><strong>COVID-19 CORONAVIRUS TRACKER</strong></h2>
+            <div className="container headings">
+                <h1 className='live '>🔴 LIVE</h1>
+                <h2 className=""><strong>COVID-19 CORONAVIRUS TRACKER</strong></h2>
             </div>
                 
                 
             <div className='container custom_row'>
                 <div className="row justify-content-md-center">
-                    <div className="col">
-                        <div className="custome-card loc">
-                            <p className='card_name'>Select Location</p>
+                    <div className="col col-cos">
+                        <div className="custome-card loc on_hover">
+                            <p className='card_name name'>Select Location</p>
                             <select name="select-location" className="drop_down" onChange={handleChangeDropdown}>
                                 <option value='0'>All over India</option>
                                 <option value='1'>Andaman and Nicobar Islands</option>
@@ -118,16 +110,16 @@ const Covid = () =>{
                             </select>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="custome-card recovered">
-                            <p className='card_name'><span> TOTAL </span> RECOVERED</p>
-                            <p className="card_total card_small">{recovered}</p>
+                    <div className="col col-cos">
+                        <div className="custome-card recovered on_hover">
+                            <p className='card_name name'><span> TOTAL </span> RECOVERED</p>
+                            <p className="card_total card_small number">{recovered}</p>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="custome-card confirmed">
-                            <p className='card_name'><span> TOTAL </span> CONFIRMED</p>
-                            <p className="card_total card_small">{confirmed}</p>
+                    <div className="col col-cos">
+                        <div className="custome-card confirmed on_hover">
+                            <p className='card_name name'><span> TOTAL </span> CONFIRMED</p>
+                            <p className="card_total card_small number">{confirmed}</p>
                         </div>
                     </div>
                 </div>
@@ -135,22 +127,22 @@ const Covid = () =>{
 
             <div className='container custom_row'>
                 <div className="row justify-content-md-center">
-                    <div className="col">
-                        <div className="custome-card deaths">
-                            <p className='card_name'><span> TOTAL </span> DEATHS</p>
-                            <p className="card_total card_small">{deaths}</p>
+                    <div className="col col-cos">
+                        <div className="custome-card deaths on_hover">
+                            <p className='card_name name'><span> TOTAL </span> DEATHS</p>
+                            <p className="card_total card_small number">{deaths}</p>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="custome-card active">
-                            <p className='card_name'><span> TOTAL </span> ACTIVE</p>
-                            <p className="card_total card_small">{active}</p>
+                    <div className="col col-cos">
+                        <div className="custome-card active on_hover">
+                            <p className='card_name name'><span> TOTAL </span> ACTIVE</p>
+                            <p className="card_total card_small number">{active}</p>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="custome-card update">
-                            <p className='card_name'><span> LAST </span> UPDATED</p>
-                            <p className="card_total card_small">{lastupdate}</p>
+                    <div className="col col-cos">
+                        <div className="custome-card update on_hover">
+                            <p className='card_name name'><span> LAST </span> UPDATED</p>
+                            <p className="card_total card_small number">{lastupdate}</p>
                         </div>
                     </div>
                 </div>

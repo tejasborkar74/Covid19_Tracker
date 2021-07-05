@@ -1,6 +1,6 @@
 # Deployed on Heroku
 
-Project Link :- https://covid19-tracker-tejas74.herokuapp.com/
+Project Link :- https://covid19-tracker-tejas74.herokuapp.com/ \
 Api Used :- https://api.covid19india.org/data.json
 
 # Getting Started with Create React App

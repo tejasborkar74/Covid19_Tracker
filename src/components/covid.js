@@ -59,7 +59,7 @@ const Covid = () =>{
 
             <div className="container headings">
                 <h1 className='live '>🔴 LIVE</h1>
-                <h2 className=""><strong>COVID-19 CORONAVIRUS TRACKER</strong></h2>
+                <h2 className="heading2"><strong>COVID-19 CORONAVIRUS TRACKER</strong></h2>
             </div>
                 
                 
@@ -67,7 +67,7 @@ const Covid = () =>{
                 <div className="row justify-content-md-center">
                     <div className="col col-cos">
                         <div className="custome-card loc on_hover">
-                            <p className='card_name name'>Select Location</p>
+                            <p className='card_name name'>SELECT LOCATION</p>
                             <select name="select-location" className="drop_down" onChange={handleChangeDropdown}>
                                 <option value='0'>All over India</option>
                                 <option value='1'>Andaman and Nicobar Islands</option>

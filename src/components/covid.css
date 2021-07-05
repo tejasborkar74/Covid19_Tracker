@@ -30,6 +30,7 @@ p{
     /* border-radius: 20%;     */
     border-color: white;
     border-width: 3px;
+    margin-top: 15px;
     
 }
 
@@ -38,9 +39,26 @@ p{
     /* margin-bottom: 100px; */
     align-items: center;
 }
-.live{
-    font-size: small;
+.heading2{
+    margin-top: 10px;
 }
+.live{
+    font-size: 10px;
+    animation: highlow 0.8s ease-in-out infinite alternate;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes highlow {
+    from {
+      transform: scale(1);
+    }
+    
+    to {
+      transform: scale(2);
+    }
+  }
 
 .on_hover:hover{
     transform:  scale(1.1);
@@ -79,6 +97,7 @@ p{
     text-align: center;
     margin-bottom: 80px;
     margin-top: 20px;
+    align-items: center;
 }
 
 .col-cos{
@@ -97,5 +116,6 @@ span{
     font-size: 50px;
     font-weight: bold;
     line-height: 52px;
+    margin-top: 20px;
 
 }
